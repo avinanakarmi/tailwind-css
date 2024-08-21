@@ -1,0 +1,33 @@
+.carousel-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.carousel-container {
+	display: flex;
+	scroll-behavior: smooth;
+}
+
+.carousel-arrow {
+	position: absolute;
+	top: 0;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	display: flex;
+	align-items: center;
+}
+
+.carousel-arrow-left {
+	left: 0px;
+}
+
+.carousel-arrow-right {
+	right: 0px;
+}
+
+.carousel-wrapper:hover .carousel-arrow {
+	opacity: 1;
+}
